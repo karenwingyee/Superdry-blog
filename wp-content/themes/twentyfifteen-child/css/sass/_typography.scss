@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf')  format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-Bold.ttf')  format('truetype'), url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+html
+{
+	font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif; 
+	font-size: 14px;
+	line-height: 1.6;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+p 
+{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+h1
+{
+	font-size: 3em;
+	line-height: 1;
+	margin: 0 0 20px;
+	letter-spacing: -3px;
+}
+h2 
+{
+	font-size: 2.75em;
+	line-height: 1;
+	margin: 0 0 15px;
+	letter-spacing: -3px;
+}
+.primary-button, .read-more 
+{
+	display: inline-block;
+	background: $primary-orange;
+	text-transform: uppercase;
+	color: white;
+	padding: 8px 24px;
+	font-weight: 600;
+	font-size: 1em;
+	border: none;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6600+46,f78a0c+96 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f78a0c+4,ff6600+54 */
+	background: #f78a0c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f78a0c 4%, #ff6600 54%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(4%,#f78a0c), color-stop(54%,#ff6600)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f78a0c 4%,#ff6600 54%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f78a0c 4%,#ff6600 54%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f78a0c 4%,#ff6600 54%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f78a0c 4%,#ff6600 54%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f78a0c', endColorstr='#ff6600',GradientType=0 ); /* IE6-9 */
+}
+.tac 
+{
+	text-align: center;
+}

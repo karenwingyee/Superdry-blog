@@ -1,0 +1,1217 @@
+/* line 2, sass/_base.scss */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, sass/_base.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1360px;
+}
+
+/* line 12, sass/_base.scss */
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 17, sass/_base.scss */
+.section-small {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 22, sass/_base.scss */
+.section-tiny {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 27, sass/_base.scss */
+.row {
+  width: 100%;
+}
+/* line 30, sass/_base.scss */
+.row:after {
+  display: block;
+  float: none;
+  content: '';
+  clear: both;
+}
+
+/* line 38, sass/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+/* begin calculations for generating grid */
+/* line 61, sass/_base.scss */
+.col-1 {
+  width: 8.33333%;
+}
+
+/* line 61, sass/_base.scss */
+.col-2 {
+  width: 16.66667%;
+}
+
+/* line 61, sass/_base.scss */
+.col-3 {
+  width: 25%;
+}
+
+/* line 61, sass/_base.scss */
+.col-4, .selector {
+  width: 33.33333%;
+}
+
+/* line 61, sass/_base.scss */
+.col-5 {
+  width: 41.66667%;
+}
+
+/* line 61, sass/_base.scss */
+.col-6 {
+  width: 50%;
+}
+
+/* line 61, sass/_base.scss */
+.col-7 {
+  width: 58.33333%;
+}
+
+/* line 61, sass/_base.scss */
+.col-8, .slider {
+  width: 66.66667%;
+}
+
+/* line 61, sass/_base.scss */
+.col-9 {
+  width: 75%;
+}
+
+/* line 61, sass/_base.scss */
+.col-10 {
+  width: 83.33333%;
+}
+
+/* line 61, sass/_base.scss */
+.col-11 {
+  width: 91.66667%;
+}
+
+/* line 61, sass/_base.scss */
+.col-12 {
+  width: 100%;
+}
+
+/* line 65, sass/_base.scss */
+[class^="col-"] {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 70, sass/_base.scss */
+[class^="col-"].center {
+  margin: 0 auto;
+  float: none;
+}
+
+/* line 77, sass/_base.scss */
+.pb0 {
+  padding-bottom: 0;
+}
+
+/* line 81, sass/_base.scss */
+.pt0 {
+  padding-top: 0;
+}
+
+/* line 85, sass/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 89, sass/_base.scss */
+.post {
+  position: relative;
+  z-index: 0;
+}
+/* line 93, sass/_base.scss */
+.post .post-overlay {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 15px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+/* line 105, sass/_base.scss */
+.post img {
+  vertical-align: bottom;
+}
+/* line 109, sass/_base.scss */
+.post .post-title {
+  margin-bottom: 5px;
+}
+/* line 113, sass/_base.scss */
+.post .post-title {
+  font-size: 1.75em;
+  margin: 0 0 5px;
+  letter-spacing: -1px;
+}
+/* line 119, sass/_base.scss */
+.post .post-author {
+  font-weight: bold;
+  color: #ff5e00;
+}
+/* line 124, sass/_base.scss */
+.post .post-excerpt {
+  font-size: 1.05em;
+}
+
+/* line 133, sass/_base.scss */
+.featured-content .post .post-title, .selector .post .post-title {
+  font-size: 2.2em;
+}
+/* line 137, sass/_base.scss */
+.featured-content .post .post-excerpt, .selector .post .post-excerpt {
+  font-size: 1.25em;
+}
+/* line 141, sass/_base.scss */
+.featured-content .post .post-overlay, .selector .post .post-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 154, sass/_base.scss */
+.selector .post {
+  height: 176.66666667px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+/* line 159, sass/_base.scss */
+.selector .post:last-of-type {
+  margin-bottom: 0;
+}
+/* line 163, sass/_base.scss */
+.selector .post .post-overlay {
+  padding: 15px;
+}
+/* line 167, sass/_base.scss */
+.selector .post img {
+  min-width: 100%;
+}
+/* line 171, sass/_base.scss */
+.selector .post .post-title {
+  font-size: 1.5em;
+}
+
+/* line 177, sass/_base.scss */
+.masonry {
+  width: 100%;
+}
+
+/* line 181, sass/_base.scss */
+.masonry {
+  overflow: hidden;
+}
+/* line 184, sass/_base.scss */
+.masonry .grid-sizer {
+  width: 32.5%;
+}
+/* line 188, sass/_base.scss */
+.masonry .gutter-sizer {
+  width: 1.25%;
+}
+/* line 192, sass/_base.scss */
+.masonry .post {
+  width: 32.5%;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 1.25%;
+}
+/* line 198, sass/_base.scss */
+.masonry .post img {
+  max-width: 750px;
+  min-width: 100%;
+}
+/* line 205, sass/_base.scss */
+.masonry .post:hover .post-excerpt {
+  display: block;
+}
+/* line 209, sass/_base.scss */
+.masonry .post:hover .read-more {
+  display: inline-block;
+}
+/* line 215, sass/_base.scss */
+.masonry .post-excerpt, .masonry .read-more {
+  display: none;
+}
+
+/* line 220, sass/_base.scss */
+.breadcrumbs {
+  font-weight: 500;
+  font-size: 1.1em;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 226, sass/_base.scss */
+.breadcrumbs li {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 231, sass/_base.scss */
+.breadcrumbs li:last-of-type {
+  margin-right: 0;
+}
+/* line 234, sass/_base.scss */
+.breadcrumbs li:last-of-type:after {
+  display: none;
+}
+/* line 239, sass/_base.scss */
+.breadcrumbs li:after {
+  display: inline-block;
+  content: '>';
+  font-size: 1.25em;
+  margin-left: 15px;
+  color: #a6a6a6;
+}
+/* line 248, sass/_base.scss */
+.breadcrumbs a {
+  color: #a6a6a6;
+  text-transform: uppercase;
+}
+
+/* line 256, sass/_base.scss */
+.products li, .products a {
+  display: block;
+}
+/* line 260, sass/_base.scss */
+.products li {
+  float: left;
+  width: 20%;
+  padding-right: 5px;
+  text-align: center;
+}
+/* line 267, sass/_base.scss */
+.products .price {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+/* line 272, sass/_base.scss */
+.products a {
+  color: #000;
+}
+/* line 276, sass/_base.scss */
+.products h3 {
+  margin-bottom: 2px;
+  font-weight: 300;
+}
+/* line 281, sass/_base.scss */
+.products img {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue.ttf") format("truetype"), url("../fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 15, sass/_typography.scss */
+html {
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+}
+
+/* line 24, sass/_typography.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* line 29, sass/_typography.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0 0 20px;
+  letter-spacing: -3px;
+}
+
+/* line 36, sass/_typography.scss */
+h2 {
+  font-size: 2.75em;
+  line-height: 1;
+  margin: 0 0 15px;
+  letter-spacing: -3px;
+}
+
+/* line 43, sass/_typography.scss */
+.primary-button, .read-more {
+  display: inline-block;
+  background: #ff5e00;
+  text-transform: uppercase;
+  color: white;
+  padding: 8px 24px;
+  font-weight: 600;
+  font-size: 1em;
+  border: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6600+46,f78a0c+96 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f78a0c+4,ff6600+54 */
+  background: #f78a0c;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f78a0c 4%, #ff6600 54%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #f78a0c), color-stop(54%, #ff6600));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f78a0c 4%, #ff6600 54%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f78a0c 4%, #ff6600 54%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f78a0c 4%, #ff6600 54%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f78a0c 4%, #ff6600 54%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f78a0c', endColorstr='#ff6600',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 64, sass/_typography.scss */
+.tac {
+  text-align: center;
+}
+
+/* line 2, sass/_native-overwrite.scss */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 8, sass/_native-overwrite.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 2, sass/_forms.scss */
+.newsletter-signup, .header-search {
+  margin-top: 20px;
+}
+/* line 5, sass/_forms.scss */
+.newsletter-signup .primary-button, .header-search .primary-button {
+  background: #ff5e00;
+}
+/* line 9, sass/_forms.scss */
+.newsletter-signup input, .header-search input {
+  padding: 8px 0;
+  border: 0;
+  text-indent: 5px;
+  margin-right: 3px;
+  width: 200px;
+}
+
+/* line 18, sass/_forms.scss */
+.header-search {
+  float: right;
+}
+
+/* line 24, sass/_forms.scss */
+.mobile-newsletter-signup input {
+  font-size: 2em;
+  background: #fff;
+  padding: 10px;
+  border: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 33, sass/_forms.scss */
+.mobile-newsletter-signup button {
+  background: #ff6633;
+  padding: 20px 0;
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  border: 0;
+  width: 49%;
+  margin-right: 2%;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 46, sass/_forms.scss */
+.mobile-newsletter-signup button:last-of-type {
+  margin-right: 0;
+}
+
+/* line 2, sass/_header.scss */
+.main-header, .mobile-header {
+  background: #000;
+  color: white;
+}
+
+/* line 9, sass/_header.scss */
+.top-menu li {
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 13, sass/_header.scss */
+.top-menu li:last-child {
+  margin-right: 0;
+}
+/* line 18, sass/_header.scss */
+.top-menu a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 25, sass/_header.scss */
+.newsletter-tagline {
+  text-align: right;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 30, sass/_header.scss */
+.newsletter-tagline a {
+  color: #ff5e00;
+  font-style: italic;
+}
+
+/* line 36, sass/_header.scss */
+.mobile-header {
+  padding: 15px;
+  display: none;
+  font-size: 2.2em;
+  text-align: right;
+}
+/* line 42, sass/_header.scss */
+.mobile-header a {
+  color: white;
+  margin-right: 10px;
+}
+/* line 47, sass/_header.scss */
+.mobile-header i {
+  line-height: 1.6;
+}
+/* line 51, sass/_header.scss */
+.mobile-header .row {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 57, sass/_header.scss */
+.mobile-header .menu {
+  display: table-cell;
+  width: 35%;
+  vertical-align: middle;
+  text-align: left;
+}
+/* line 64, sass/_header.scss */
+.mobile-header .logo {
+  display: table-cell;
+  width: 65%;
+  vertical-align: middle;
+  text-align: right;
+}
+/* line 70, sass/_header.scss */
+.mobile-header .logo img {
+  max-width: 250px;
+  vertical-align: middle;
+}
+
+/* line 77, sass/_header.scss */
+.mobile-menu, .search-menu {
+  position: fixed;
+  top: 73px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: white;
+  display: none;
+}
+/* line 87, sass/_header.scss */
+.mobile-menu.active, .search-menu.active {
+  display: block;
+}
+/* line 91, sass/_header.scss */
+.mobile-menu .header-search, .search-menu .header-search {
+  float: none;
+}
+/* line 94, sass/_header.scss */
+.mobile-menu .header-search input, .search-menu .header-search input {
+  border: 1px solid #eee;
+  padding: 20px;
+}
+/* line 99, sass/_header.scss */
+.mobile-menu .header-search .primary-button, .search-menu .header-search .primary-button {
+  padding: 20px;
+}
+
+/* line 106, sass/_header.scss */
+.mobile-options {
+  font-size: 1.5em;
+}
+/* line 109, sass/_header.scss */
+.mobile-options a {
+  color: #3c3c3c;
+  font-weight: 600;
+  display: block;
+  text-transform: uppercase;
+}
+/* line 116, sass/_header.scss */
+.mobile-options li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 120, sass/_header.scss */
+.mobile-options li:first-child {
+  border-top: 1px solid #e7e7e7;
+}
+/* line 125, sass/_header.scss */
+.mobile-options i {
+  line-height: 1.6;
+  float: right;
+  color: #ff5e00;
+}
+/* line 131, sass/_header.scss */
+.mobile-options.active {
+  display: block;
+}
+
+/* line 2, sass/_footer.scss */
+.main-footer {
+  background: #0b0b0b;
+}
+/* line 5, sass/_footer.scss */
+.main-footer .newsletter-tagline {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+/* line 11, sass/_footer.scss */
+.main-footer h4 {
+  font-size: 13px;
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #ff5e00;
+  text-transform: uppercase;
+}
+/* line 21, sass/_footer.scss */
+.main-footer li a {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 29, sass/_footer.scss */
+.main-footer .follow {
+  margin-top: 25px;
+}
+/* line 32, sass/_footer.scss */
+.main-footer .follow h4 {
+  color: white;
+}
+
+/* line 38, sass/_footer.scss */
+.mobile-footer {
+  display: none;
+  background: #222222;
+  color: white;
+}
+/* line 43, sass/_footer.scss */
+.mobile-footer h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+/* line 50, sass/_footer.scss */
+.mobile-footer-menu {
+  background: #000;
+  color: white;
+}
+
+/* line 55, sass/_footer.scss */
+.mobile-footer-list {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* line 59, sass/_footer.scss */
+.mobile-footer-list > li {
+  text-transform: uppercase;
+}
+/* line 62, sass/_footer.scss */
+.mobile-footer-list > li i.right {
+  float: right;
+  color: #ff5e00;
+  line-height: 1.6;
+}
+/* line 68, sass/_footer.scss */
+.mobile-footer-list > li:first-child {
+  border-top: 2px dotted white;
+}
+/* line 73, sass/_footer.scss */
+.mobile-footer-list a {
+  display: block;
+  padding: 10px;
+  border-bottom: 2px dotted white;
+}
+/* line 79, sass/_footer.scss */
+.mobile-footer-list .sub-menu {
+  height: 0;
+  overflow: hidden;
+}
+/* line 83, sass/_footer.scss */
+.mobile-footer-list .sub-menu.active {
+  height: auto;
+}
+/* line 87, sass/_footer.scss */
+.mobile-footer-list .sub-menu li {
+  text-transform: none;
+  font-size: .9em;
+}
+/* line 92, sass/_footer.scss */
+.mobile-footer-list .sub-menu a {
+  padding-left: 25px;
+}
+/* line 96, sass/_footer.scss */
+.mobile-footer-list .sub-menu i {
+  margin-right: 10px;
+}
+/* line 99, sass/_footer.scss */
+.mobile-footer-list .sub-menu i.right {
+  margin-right: 0;
+}
+/* line 105, sass/_footer.scss */
+.mobile-footer-list a {
+  color: white;
+}
+
+/* line 110, sass/_footer.scss */
+.country-select {
+  margin-top: 20px;
+}
+/* line 113, sass/_footer.scss */
+.country-select select {
+  width: 100%;
+  padding: 15px;
+}
+
+/* line 4, sass/_sidebar.scss */
+.side-content .side-block {
+  margin-bottom: 25px;
+}
+/* line 7, sass/_sidebar.scss */
+.side-content .side-block h3 {
+  margin-top: 0;
+  padding: 8px 16px;
+  background: #191919;
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+}
+/* line 15, sass/_sidebar.scss */
+.side-content .side-block h3 .follow {
+  font-size: 13px;
+  line-height: 30px;
+  float: right;
+  color: #ff5e00;
+  font-style: italic;
+}
+/* line 23, sass/_sidebar.scss */
+.side-content .side-block h3 i {
+  margin-left: 5px;
+}
+
+/* line 30, sass/_sidebar.scss */
+.side-post {
+  background: #f5f5f5;
+  padding: 10px;
+}
+/* line 34, sass/_sidebar.scss */
+.side-post .post {
+  max-height: 250px;
+  overflow: hidden;
+}
+/* line 38, sass/_sidebar.scss */
+.side-post .post .post-overlay {
+  padding: 10px;
+}
+/* line 42, sass/_sidebar.scss */
+.side-post .post img {
+  min-width: 100%;
+}
+
+/* line 50, sass/_sidebar.scss */
+.tweets li {
+  display: block;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+/* line 55, sass/_sidebar.scss */
+.tweets li:last-child {
+  margin-bottom: 0;
+}
+/* line 65, sass/_sidebar.scss */
+.tweets .tweet-head img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+}
+/* line 72, sass/_sidebar.scss */
+.tweets .tweet-head .user {
+  float: left;
+}
+/* line 76, sass/_sidebar.scss */
+.tweets .tweet-head .username, .tweets .tweet-head .name {
+  display: block;
+  font-size: 16px;
+  color: #171717;
+}
+/* line 82, sass/_sidebar.scss */
+.tweets .tweet-head .name {
+  font-weight: 600;
+}
+/* line 87, sass/_sidebar.scss */
+.tweets .text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #171717;
+  font-weight: 600;
+}
+/* line 93, sass/_sidebar.scss */
+.tweets .text a {
+  color: #ff5e00;
+}
+
+/* line 101, sass/_sidebar.scss */
+.instas li {
+  float: left;
+  width: 48.75%;
+  margin-right: 2.5%;
+  margin-bottom: 5px;
+}
+/* line 107, sass/_sidebar.scss */
+.instas li:nth-child(2n) {
+  margin-right: 0;
+}
+
+/* line 113, sass/_sidebar.scss */
+.product-spotlight {
+  text-align: center;
+}
+
+/* line 2, sass/_post.scss */
+.post-content {
+  position: relative;
+}
+/* line 5, sass/_post.scss */
+.post-content .post-title {
+  font-size: 5.25em;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-right: 100px;
+  letter-spacing: -4px;
+}
+
+/* line 14, sass/_post.scss */
+.subscribe {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+/* line 21, sass/_post.scss */
+.subscribe i {
+  color: #ff5e00;
+}
+
+/* line 26, sass/_post.scss */
+.published {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+/* line 30, sass/_post.scss */
+.published .date {
+  font-style: italic;
+}
+
+/* line 35, sass/_post.scss */
+.post-text {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+/* line 39, sass/_post.scss */
+.post-text a {
+  font-weight: 700;
+  color: #ff5e00;
+}
+/* line 44, sass/_post.scss */
+.post-text img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 49, sass/_post.scss */
+.tags {
+  margin: 0;
+  padding: 0;
+}
+/* line 53, sass/_post.scss */
+.tags li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+/* line 59, sass/_post.scss */
+.tags a {
+  background: #191919;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  padding: 5px 15px;
+}
+
+/* line 68, sass/_post.scss */
+.post-meta {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 72, sass/_post.scss */
+.post-meta .col-7 {
+  padding-left: 0;
+}
+/* line 76, sass/_post.scss */
+.post-meta .col-5 {
+  padding-right: 0;
+  text-align: right;
+}
+
+/* line 81, sass/_post.scss */
+.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices, .stButton .stButton_gradient {
+  height: 22px !important;
+  line-height: 20px;
+}
+
+@media (max-width: 1400px) {
+  /* line 4, sass/_responsive-styles.scss */
+  .container {
+    max-width: 1200px;
+  }
+
+  /* line 8, sass/_responsive-styles.scss */
+  .slider, .selector {
+    width: 100%;
+  }
+
+  /* line 14, sass/_responsive-styles.scss */
+  .slider .post {
+    max-height: 550px;
+    overflow: hidden;
+  }
+  /* line 18, sass/_responsive-styles.scss */
+  .slider .post img {
+    width: 100%;
+  }
+
+  /* line 24, sass/_responsive-styles.scss */
+  .selector {
+    margin-top: 20px;
+  }
+  /* line 27, sass/_responsive-styles.scss */
+  .selector .post {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+    height: auto;
+    max-height: 210px;
+  }
+  /* line 34, sass/_responsive-styles.scss */
+  .selector .post:last-child {
+    margin-right: 0;
+  }
+
+  /* line 42, sass/_responsive-styles.scss */
+  .masonry .grid-sizer {
+    width: 49%;
+  }
+  /* line 46, sass/_responsive-styles.scss */
+  .masonry .gutter-sizer {
+    width: 2%;
+  }
+  /* line 50, sass/_responsive-styles.scss */
+  .masonry .post {
+    width: 49%;
+  }
+}
+@media (max-width: 1250px) {
+  /* line 58, sass/_responsive-styles.scss */
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 66, sass/_responsive-styles.scss */
+  .container {
+    max-width: 760px;
+  }
+
+  /* line 70, sass/_responsive-styles.scss */
+  .main-content, .side-content {
+    width: 100%;
+    float: none;
+  }
+
+  /* line 75, sass/_responsive-styles.scss */
+  .side-block {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+  }
+  /* line 80, sass/_responsive-styles.scss */
+  .side-block:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  /* line 85, sass/_responsive-styles.scss */
+  .resp-med-hide {
+    display: none;
+  }
+
+  /* line 91, sass/_responsive-styles.scss */
+  .header-search input {
+    float: left;
+    width: 70%;
+    margin-right: 0;
+    font-size: 1em;
+  }
+  /* line 98, sass/_responsive-styles.scss */
+  .header-search .primary-button {
+    float: left;
+    width: 30%;
+  }
+}
+@media (max-width: 780px) {
+  /* line 107, sass/_responsive-styles.scss */
+  .resp-small-hide {
+    display: none;
+  }
+
+  /* line 111, sass/_responsive-styles.scss */
+  .mobile-header, .mobile-footer {
+    display: block;
+  }
+
+  /* line 115, sass/_responsive-styles.scss */
+  .mobile-header .logo img {
+    max-width: 100%;
+  }
+
+  /* line 119, sass/_responsive-styles.scss */
+  .container {
+    max-width: none;
+  }
+
+  /* line 123, sass/_responsive-styles.scss */
+  .home-content {
+    padding-top: 0;
+  }
+
+  /* line 127, sass/_responsive-styles.scss */
+  .slider, .main-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 132, sass/_responsive-styles.scss */
+  .post-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 136, sass/_responsive-styles.scss */
+  .post-content .post-title {
+    padding-top: 0;
+  }
+
+  /* line 141, sass/_responsive-styles.scss */
+  .breadcrumbs {
+    padding: 10px 20px;
+    background: #f2f2f2;
+    border-bottom: none;
+  }
+
+  /* line 147, sass/_responsive-styles.scss */
+  .tags, .likes {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  /* line 154, sass/_responsive-styles.scss */
+  .look-title {
+    text-align: center;
+  }
+
+  /* line 160, sass/_responsive-styles.scss */
+  .products li {
+    width: 33.3333%;
+    margin-bottom: 20px;
+  }
+
+  /* line 168, sass/_responsive-styles.scss */
+  .masonry .grid-sizer {
+    width: 49.5%;
+  }
+  /* line 172, sass/_responsive-styles.scss */
+  .masonry .gutter-sizer {
+    width: 1%;
+  }
+  /* line 176, sass/_responsive-styles.scss */
+  .masonry .post {
+    width: 49.5%;
+    height: 450px;
+    margin-bottom: 15px;
+  }
+  /* line 182, sass/_responsive-styles.scss */
+  .masonry .post-overlay {
+    background: #000;
+  }
+  /* line 186, sass/_responsive-styles.scss */
+  .masonry .post-excerpt, .masonry .read-more {
+    display: block;
+  }
+  /* line 190, sass/_responsive-styles.scss */
+  .masonry .read-more {
+    display: inline-block;
+  }
+}
+@media (max-width: 450px) {
+  /* line 198, sass/_responsive-styles.scss */
+  body {
+    font-size: .85em;
+  }
+
+  /* line 204, sass/_responsive-styles.scss */
+  .masonry .grid-sizer {
+    width: 100%;
+  }
+  /* line 208, sass/_responsive-styles.scss */
+  .masonry .gutter-sizer {
+    width: 0%;
+  }
+  /* line 212, sass/_responsive-styles.scss */
+  .masonry .post {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 15px;
+  }
+
+  /* line 219, sass/_responsive-styles.scss */
+  .featured-content .post .img {
+    width: 600px;
+    max-width: none;
+    margin-left: -100px;
+  }
+
+  /* line 227, sass/_responsive-styles.scss */
+  .products li {
+    width: 50%;
+  }
+}
+.aligncenter{
+  display: block;
+  margin: 20px auto;
+}
+.alignleft{
+  float: left;
+  margin: 0 10px ;
+}
+.alignright{
+  float: right;
+  margin: 0 10px ;
+}
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+.white_content {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 500px;
+    height: 230px;
+    padding: 16px;
+    border: 16px solid #ff5e00;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+    color: #000;
+
+}
+.white_content p{
+  text-align: center;
+}
+.mc4wp-alert{
+  text-align: center;
+}
+.newsletter-tagline .follow a{
+  color: inherit;
+  font-size: 20px;
+}
+.mobile-signup .newsletter-signup input{
+  font-size: 2em;
+  background: #fff;
+  padding: 10px;
+  border: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.mobile-signup .newsletter-signup .primary-button {
+  background: #ff5e00;
+}
+
+
+
+.slider {
+  position: relative;
+}
+.slider .post {
+  display: none;
+}
+
